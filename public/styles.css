@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    /* Dark gray for text, good for readability */
+    background: #FFFFFF;
+}
+
+
+header,
+nav {
+    padding: 10px;
+    margin: 0px;
+    /* Reduced padding */
+    text-align: center;
+    /* Align content to the left */
+
+}
+
+header {
+    background: linear-gradient(to bottom right, #9A7FA5, #DA5736);
+    background-repeat: no-repeat;
+    /* Prevents the gradient from repeating */
+    background-attachment: fixed;
+    /* Keeps the gradient fixed during scrolling */
+    background-size: cover;
+    /* Ensures the gradient covers the entire element */
+}
+
+.header-content {
+    display: flex;
+    /* Enables flexbox layout */
+    align-items: center;
+    /* Centers items vertically */
+    justify-content: center;
+    /* Aligns content to the start of the flex container */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    /* Adds space between the logo and the company name */
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h1 {
+    color: #FFFFFF;
+    margin: 0;
+    /* Removes margin to align closely with the logo */
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #DA5736;
+    /* Adds a little space above the nav bar */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    /* Centers the section horizontally */
+    text-align: left;
+    /* Ensures text within the section is left-aligned */
+    max-width: 800px;
+    /* Sets a max-width for the content area */
+    width: 90%;
+    /* Responsive width, adjusts based on screen size */
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    /* Centers the header text */
+}
+
+.profile {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+    vertical-align: top;
+    overflow: hidden;
+    text-align: center;
+    /* Centers the profile headers and descriptions within the profile */
+}
+
+.profile:last-child {
+    margin-right: 0;
+}
+
+.profile img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    /* Centers form elements horizontally */
+    padding: 8px;
+    max-width: 500px;
+    /* Ensures form elements don't get too wide on larger screens */
+}
+
+form button {
+    background-color: #9A7FA5;
+    /* Vibrant coral for the button to stand out */
+    color: #FFFFFF;
+    /* White text on the button for contrast */
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: linear-gradient(to bottom right, #9A7FA5, #DA5736);
+    background-repeat: no-repeat; /* Prevents the gradient from repeating */
+    background-attachment: fixed; /* Keeps the gradient fixed during scrolling */
+    background-size: cover; /* Ensures the gradient covers the entire element */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+footer p {
+    margin: 0;
+}

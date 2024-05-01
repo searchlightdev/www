@@ -1,0 +1,7 @@
+purple - #9A7FA5
+green - #95B45F
+teal - #76B4AB
+red - #DA5736
+yellow - #FFCA46
+black - #3E424B
+beige - #F0EAD6
