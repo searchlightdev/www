@@ -9,17 +9,19 @@ body {
 }
 
 
-header,
-nav {
-    padding: 10px;
-    margin: 0px;
+header {
+    padding: 0px;
+    margin: 0px;    
+    border: 0px;
+    position: sticky;
     /* Reduced padding */
     text-align: center;
     /* Align content to the left */
-
+    z-index: 100;
+    top: 0px;
 }
 
-header {
+.banner {
     background: linear-gradient(to bottom right, #9A7FA5, #DA5736);
     background-repeat: no-repeat;
     /* Prevents the gradient from repeating */
@@ -27,9 +29,6 @@ header {
     /* Keeps the gradient fixed during scrolling */
     background-size: cover;
     /* Ensures the gradient covers the entire element */
-}
-
-.header-content {
     display: flex;
     /* Enables flexbox layout */
     align-items: center;
@@ -80,13 +79,14 @@ nav {
     font-weight: 400;
     font-size: 24px;
     color: #DA5736;
-    /* Adds a little space above the nav bar */
+    background-color: #FFFFFF;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 5px;
+    margin: 0px;
+    padding: 5px;
 }
 
 nav ul li {
