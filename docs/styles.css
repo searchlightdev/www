@@ -104,7 +104,7 @@ section {
     /* Centers the section horizontally */
     text-align: left;
     /* Ensures text within the section is left-aligned */
-    max-width: 800px;
+    max-width: 1024px;
     /* Sets a max-width for the content area */
     width: 90%;
     /* Responsive width, adjusts based on screen size */
