@@ -24,17 +24,12 @@ header {
 .banner {
     background: linear-gradient(to bottom right, #9A7FA5, #DA5736);
     background-repeat: no-repeat;
-    /* Prevents the gradient from repeating */
     background-attachment: fixed;
-    /* Keeps the gradient fixed during scrolling */
     background-size: cover;
-    /* Ensures the gradient covers the entire element */
     display: flex;
-    /* Enables flexbox layout */
     align-items: center;
-    /* Centers items vertically */
     justify-content: center;
-    /* Aligns content to the start of the flex container */
+    padding: 5px;
 }
 
 .logo {
