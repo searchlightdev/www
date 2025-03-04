@@ -1,173 +1,589 @@
+/* Global Styles */
+:root {
+    --primary-color: #2D3142;
+    --secondary-color: #5C7AEA;
+    --accent-color: #4F9D69;
+    --light-bg: #F9F9F9;
+    --dark-text: #333333;
+    --light-text: #FFFFFF;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
-    scroll-padding-top: 180px;
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    /* Dark gray for text, good for readability */
-    background: #FFFFFF;
-}
-
-
-header {
-    padding: 0px;
-    margin: 0px;    
-    border: 0px;
-    position: sticky;
-    /* Reduced padding */
-    text-align: center;
-    /* Align content to the left */
-    z-index: 100;
-    top: 0px;
-}
-
-.banner {
-    background: linear-gradient(to bottom right, #9A7FA5, #DA5736);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-}
-
-.logo {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-    /* Adds space between the logo and the company name */
-}
-
-
-h1,
-h2,
-h3 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--dark-text);
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.3;
 }
 
 h1 {
-    font-weight: 200;
-    font-size: 48px;
+    font-weight: 600;
+    font-size: 42px;
 }
 
 h2 {
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    color: var(--primary-color);
+}
+
+h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+    margin: 15px auto 0;
 }
 
 h3 {
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+h4 {
     font-weight: 400;
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.banner {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
+
+.banner .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 64px;
+    height: auto;
+    margin-right: 20px;
 }
 
 h1 {
-    color: #FFFFFF;
+    color: var(--light-text);
     margin: 0;
-    /* Removes margin to align closely with the logo */
-}
-
-a:link, a:visited {
-    color: #9A7FA5;
 }
 
 nav {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #DA5736;
     background-color: #FFFFFF;
+    padding: 15px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
     padding: 0;
-    margin: 0px;
-    padding: 5px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 30px;
+    margin: 0 30px;
 }
 
 nav ul li a {
     text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
 }
 
-section {
-    padding: 20px;
-    margin: 10px auto;
-    /* Centers the section horizontally */
-    text-align: left;
-    /* Ensures text within the section is left-aligned */
-    max-width: 1024px;
-    /* Sets a max-width for the content area */
-    width: 90%;
-    /* Responsive width, adjusts based on screen size */
+nav ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
 }
 
-h2 {
+/* Hide short nav text by default */
+.nav-text-short {
+    display: none;
+}
+
+nav ul li a:hover, 
+nav ul li a:focus {
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+#hero {
+    background-image: linear-gradient(rgba(45, 49, 66, 0.85), rgba(45, 49, 66, 0.85)), url('https://source.unsplash.com/random/1200x600/?technology');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-text);
     text-align: center;
-    color: #000000;
-    /* Centers the header text */
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--light-text);
+}
+
+.hero-content h2:after {
+    background: var(--light-text);
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+}
+
+.alternating-bg {
+    background-color: var(--light-bg);
+}
+
+.section-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Profile Styles */
+.profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .profile {
-    display: inline-block;
-    width: 45%;
-    margin-right: 5%;
-    vertical-align: top;
-    overflow: hidden;
-    text-align: center;
-    /* Centers the profile headers and descriptions within the profile */
-}
-
-.profile:last-child {
-    margin-right: 0;
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .profile img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    object-position: center;
+    border-radius: 5px 5px 0 0;
 }
 
-form input,
-form textarea,
-form button {
+.profile-content {
+    padding: 30px;
+    flex-grow: 1;
+}
+
+/* Contact Styles */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1 1 40%;
+    min-width: 300px;
+}
+
+.contact-methods {
+    margin-top: 30px;
+}
+
+.contact-methods p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-methods i {
+    margin-right: 10px;
+    color: var(--secondary-color);
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-methods a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-methods a:hover {
+    color: var(--secondary-color);
+}
+
+#contactForm {
+    flex: 1 1 50%;
+    min-width: 300px;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
     display: block;
-    width: 90%;
-    margin: 10px auto;
-    /* Centers form elements horizontally */
-    padding: 8px;
-    max-width: 500px;
-    /* Ensures form elements don't get too wide on larger screens */
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--primary-color);
 }
 
-form button {
-    background-color: #9A7FA5;
-    /* Vibrant coral for the button to stand out */
-    color: #FFFFFF;
-    /* White text on the button for contrast */
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: var(--transition);
+    background-color: #FCFCFC;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(92, 122, 234, 0.2);
+    background-color: #FFFFFF;
+}
+
+/* Card Styles */
+.card {
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.profile.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#contactForm.card:hover {
+    transform: none;
+}
+
+/* Button Styles */
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px;
+    text-align: center;
+    border-radius: 4px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    transition: var(--transition);
+    box-shadow: 0 4px 6px rgba(92, 122, 234, 0.2);
 }
 
-footer {
-    background: linear-gradient(to bottom right, #9A7FA5, #DA5736);
-    background-repeat: no-repeat; /* Prevents the gradient from repeating */
-    background-attachment: fixed; /* Keeps the gradient fixed during scrolling */
-    background-size: cover; /* Ensures the gradient covers the entire element */
-    color: #FFFFFF;
+.cta-button:hover, 
+.cta-button:focus {
+    background-color: #4A69D4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(92, 122, 234, 0.3);
+}
+
+#form-status {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
     text-align: center;
-    padding: 20px;
-    margin: 10px;
 }
 
-footer p {
-    margin: 0;
+#form-status.success {
+    background-color: rgba(79, 157, 105, 0.1);
+    color: #3A8A54;
+    border: 1px solid #4F9D69;
+}
+
+#form-status.error {
+    background-color: rgba(224, 74, 58, 0.1);
+    color: #CC3A2B;
+    border: 1px solid #E04A3A;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add spacing before the submit button */
+#contactForm .cta-button {
+    margin-top: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 100px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    .hero-content h2 {
+        font-size: 36px;
+    }
+    
+    .hero-content p {
+        font-size: 20px;
+    }
+    
+    .profile {
+        flex: 1 1 100%;
+    }
+    
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li {
+        margin: 5px 15px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links ul {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .footer-links ul li {
+        margin: 0 10px;
+    }
+}
+
+/* Adjust header for medium screens */
+@media (max-width: 640px) {
+    .logo {
+        width: 40px;
+    }
+    
+    h1 {
+        font-size: 26px; /* Slightly smaller to fit */
+    }
+    
+    /* Keep "Development" visible on all screens */
+    h1 .development {
+        display: inline;
+    }
+    
+    /* Navigation adjustments */
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    .nav-text {
+        display: none;
+    }
+    
+    .nav-text-short {
+        display: inline;
+    }
+    
+    /* Reduce font sizes for content */
+    body {
+        font-size: 16px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    .hero-content h2 {
+        font-size: 30px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .container {
+        flex-direction: row; /* Keep logo and text on same line */
+        justify-content: center;
+        width: 100%; /* Use full width */
+        max-width: none;
+        padding: 0 5px; /* Minimal padding */
+    }
+    
+    .logo {
+        width: 32px; /* Original logo size */
+        margin-right: 8px;
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        font-size: 20px; /* Slightly smaller to fit with "Development" */
+        letter-spacing: -0.02em; /* Tighten letter spacing */
+    }
+    
+    .banner {
+        padding: 12px 0; /* Original padding */
+    }
+    
+    nav {
+        padding: 8px 0;
+    }
+    
+    nav ul li {
+        margin: 0 6px; /* Smaller margins to fit more */
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+    }
+    
+    nav ul li a i {
+        font-size: 12px;
+        margin-right: 4px; /* Less space between icon and text */
+    }
+    
+    /* Further reduce font sizes */
+    body {
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    
+    h2:after {
+        width: 60px;
+        margin: 10px auto 0;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+    
+    .hero-content h2 {
+        font-size: 24px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    #hero {
+        padding: 40px 0;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    p {
+        margin-bottom: 15px;
+    }
 }

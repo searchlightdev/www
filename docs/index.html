@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Searchlight Development - Creating innovative AI technology solutions that transform industries and improve everyday life.">
     <title>Searchlight Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/favicon.png" type="image/png">
 </head>
@@ -16,82 +17,136 @@
 <body>
     <header>
         <div class="banner">
-            <img src="logo-white.png" alt="Searchlight Development logo" class="logo">
-            <h1>Searchlight Development</h1>
+            <div class="container">
+                <img src="logo-white.png" alt="Searchlight Development logo" class="logo">
+                <h1>Searchlight <span class="development">Development</span></h1>
+            </div>
         </div>
         <nav>
-            <ul>
-                <li><a href="#our-story">Our Story</a></li>
-                <li><a href="#who-we-are">Who We Are</a></li>
-                <li><a href="#get-in-touch">Get in Touch</a></li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li><a href="#our-story"><i class="fas fa-book-open"></i> <span class="nav-text">Our Story</span><span class="nav-text-short">Story</span></a></li>
+                    <li><a href="#who-we-are"><i class="fas fa-users"></i> <span class="nav-text">Who We Are</span><span class="nav-text-short">Team</span></a></li>
+                    <li><a href="#get-in-touch"><i class="fas fa-envelope"></i> <span class="nav-text">Get in Touch</span><span class="nav-text-short">Contact</span></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    </nav>
 
-    <section id="our-story">
-        <p>Searchlight Development was born out of a shared passion for creating innovative technology solutions. At the
-            beginning of the year, we made the exciting decision to embark on a new journey, inspired by the potential
-            we saw for transforming industries with cutting-edge AI. We left our previous roles with the desire to chart
-            a new path where we could fully embrace our vision and build solutions that make a meaningful difference.
-        </p>
-        <p>We believe in the transformative power of AI to redefine the way we solve problems and improve everyday life.
-            Our goal is to create tools that not only disrupt the current market but also bring meaningful improvements
-            to everyday life. We want to develop solutions that deeply integrate AI into their core, as opposed to
-            merely adding a cosmetic layer. With Searchlight Development, we’re committed to shining a light on a new
-            era of technology that empowers people and transforms industries for the better.</p>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transforming Industries with AI</h2>
+                <p>We build innovative technology solutions that make a meaningful difference.</p>
+                <a href="#get-in-touch" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-story" class="alternating-bg">
+        <div class="container">
+            <h2><i class="fas fa-book-open"></i> Our Story</h2>
+            <div class="section-content">
+                <p>Searchlight Development was born out of a shared passion for creating innovative technology solutions. At the
+                    beginning of the year, we made the exciting decision to embark on a new journey, inspired by the potential
+                    we saw for transforming industries with cutting-edge AI. We left our previous roles with the desire to chart
+                    a new path where we could fully embrace our vision and build solutions that make a meaningful difference.
+                </p>
+                <p>We believe in the transformative power of AI to redefine the way we solve problems and improve everyday life.
+                    Our goal is to create tools that not only disrupt the current market but also bring meaningful improvements
+                    to everyday life. We want to develop solutions that deeply integrate AI into their core, as opposed to
+                    merely adding a cosmetic layer. With Searchlight Development, we're committed to shining a light on a new
+                    era of technology that empowers people and transforms industries for the better.</p>
+            </div>
+        </div>
     </section>
 
     <section id="who-we-are">
-        <h2>Who We Are</h2>
-        <div class="profile">
-            <img src="craig-green.jpg" alt="Craig Lebowitz headshot">
-            <h3>Craig Lebowitz</h3>
-            <p></p>Craig Lebowitz is a highly accomplished software architect with over 20 years of experience in the 
-                Software-as-a-Service industry. Joining a tiny startup with a strange name ("NGP"??) as employee number seven, 
-                he rose through the ranks to lead all technical architecture work. From NGP VAN and its two major 
-                fundraising/compliance product migrations to managing the integration, consolidation, and end-of-life 
-                management for seventeen different SaaS applications, Craig has seen what it takes to succeed (and in some 
-                cases fail) at all scales of the SaaS business.  As just one example of his work, he oversaw reliability and 
-                performance as the company 100xed its payments business, maturing the technology to the point where it could 
-                process billions of dollars for Democrats and progressive nonprofits.</p>
-            <p>An alumnus of the Massachusetts Institute of Technology where he earned degrees in Computer Science and 
-                Mathematics, Craig applies both his theoretical background and his practical experience to the building 
-                of simple, performant, and effective software applications. He is a strong advocate for AI innovation and 
-                cloud computing, consistently seeking to bring these transformative technologies into practical business 
-                solutions. His expertise extends to mentoring the next generation of software professionals and enhancing 
-                user experience and performance through data-driven insights.</p>
-        </div>
-        <div class="profile">
-            <img src="drew-green.jpg" alt="Drew Miller headshot">
-            <h3>Drew Miller</h3>
-            <p>Drew Miller got his start in politics and technology working the Iowa Caucuses, scraping university records 
-                and later Facebook to build proprietary student voter files that were orders of magnitude more accurate than 
-                those available from the state. He took that experience to the Iowa Democratic Democratic party,\ where he 
-                worked in field organizing, IT, and data, and built the 2008 caucus reporting system on a novel new technology 
-                platform called "Amazon Web Services", which didn't crash (remarkable for the time!) and cost less than $100 
-                to support during peak load.</p>
-            <p>After working for both the state party and the Obama campaign through the election cycle, Drew made his way to 
-                Boston to work for the company that built his favorite tool - a CRM for tracking voter contact efforts at scale, 
-                called Voter Activation Network. He started as a software engineer but quickly realized he could make a bigger 
-                impact in management. Through various roles (culiminating in SVP Engineering) he oversaw teams ranging from 3 
-                people to over 200, and led a high morale, high productivity, low turnover department through 10 years of organic 
-                growth and another 5 of privaty equity investment and highly-acquisitive growth.</p>
+        <div class="container">
+            <h2><i class="fas fa-users"></i> Who We Are</h2>
+            <div class="profiles-container">
+                <div class="profile card">
+                    <img src="craig-white.jpg" alt="Craig Lebowitz headshot">
+                    <div class="profile-content">
+                        <h3>Craig Lebowitz</h3>
+                        <h4>Co-Founder</h4>
+                        <p>Craig Lebowitz is a highly accomplished software architect with over 20 years of experience in the 
+                            Software-as-a-Service industry. Joining a tiny startup with a strange name ("NGP"??) as employee number seven, 
+                            he rose through the ranks to lead all technical architecture work. From NGP VAN and its two major 
+                            fundraising/compliance product migrations to managing the integration, consolidation, and end-of-life 
+                            management for seventeen different SaaS applications, Craig has seen what it takes to succeed (and in some 
+                            cases fail) at all scales of the SaaS business.</p>
+                        <p>An alumnus of the Massachusetts Institute of Technology where he earned degrees in Computer Science and 
+                            Mathematics, Craig applies both his theoretical background and his practical experience to the building 
+                            of simple, performant, and effective software applications. He is a strong advocate for AI innovation and 
+                            cloud computing, consistently seeking to bring these transformative technologies into practical business 
+                            solutions.</p>
+                    </div>
+                </div>
+                <div class="profile card">
+                    <img src="drew-white.jpg" alt="Drew Miller headshot">
+                    <div class="profile-content">
+                        <h3>Drew Miller</h3>
+                        <h4>Co-Founder</h4>
+                        <p>Drew Miller got his start in politics and technology working the Iowa Caucuses, scraping university records 
+                            and later Facebook to build proprietary student voter files that were orders of magnitude more accurate than 
+                            those available from the state. He took that experience to the Iowa Democratic Party, where he 
+                            worked in field organizing, IT, and data, and built the 2008 caucus reporting system on a novel new technology 
+                            platform called "Amazon Web Services", which didn't crash (remarkable for the time!) and cost less than $100 
+                            to support during peak load.</p>
+                        <p>After working for both the state party and the Obama campaign through the election cycle, Drew made his way to 
+                            Boston to work for the company that built his favorite tool - a CRM for tracking voter contact efforts at scale, 
+                            called Voter Activation Network. He started as a software engineer but quickly realized he could make a bigger 
+                            impact in management. Through various roles (culminating in SVP Engineering) he oversaw teams ranging from 3 
+                            people to over 200, and led a high morale, high productivity, low turnover department through 15 years of growth.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="get-in-touch">
-        <h2>Get in Touch</h2>
-        <form id="contactForm">
-            <input id="name" type="text" placeholder="Name" aria-label="Name">
-            <input id="email" type="email" placeholder="Email" aria-label="Email">
-            <input id="phone" type="tel" placeholder="Phone" aria-label="Phone">
-            <textarea id="comments" placeholder="What are ya hearin'?" aria-label="Comments"></textarea>
-            <button id="submit" type="submit">Send</button>
-        </form>
+    <section id="get-in-touch" class="alternating-bg">
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Ready to transform your business with AI? We'd love to hear from you and discuss how we can help bring your ideas to life.</p>
+                    <div class="contact-methods">
+                        <p><i class="fas fa-map-marker-alt"></i> Bethesda, MD</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:3012848204">(301) 284-8204</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@searchlight.dev">info@searchlight.dev</a></p>
+                    </div>
+                </div>
+                <form id="contactForm" class="card">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Your name" aria-label="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Your email" aria-label="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="tel" placeholder="Your phone number" aria-label="Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Message</label>
+                        <textarea id="comments" placeholder="What are you looking for?" aria-label="Comments" rows="5" required></textarea>
+                    </div>
+                    <button id="submit" type="submit" class="cta-button">Send Message</button>
+                    <div id="form-status" class="hidden"></div>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2024 Searchlight Development, LLC. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2024 Searchlight <span class="development">Development</span>, LLC. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script type="text/javascript" src="postForm.js"></script>
